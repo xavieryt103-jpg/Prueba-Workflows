@@ -1,0 +1,8 @@
+{
+  "name": "landing-demo",
+  "version": "1.0.0",
+  "description": "Proyecto de practica para integracion continua",
+  "scripts": {
+    "test": "node tests/run.js"
+  }
+}
