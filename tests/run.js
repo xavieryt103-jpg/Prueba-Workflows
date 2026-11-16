@@ -9,6 +9,5 @@ assert.strictEqual(totalConIGV(100), 118);
 
 // 3. Un monto negativo debe dar error
 assert.throws(() => calcularIGV(-10));
-assert.strictEqual(1, 2, "Prueba fallida a proposito para demostrar el CI");
 
 console.log("Todas las pruebas pasaron");
