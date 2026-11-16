@@ -1,0 +1,24 @@
+name: CI Landing Demo
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Obtener codigo
+        uses: actions/checkout@v4
+
+      - name: 2. Preparar entorno (Node.js 20)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 3. Instalar dependencias
+        run: npm install
+
+      - name: 4. Ejecutar pruebas
+        run: npm test
